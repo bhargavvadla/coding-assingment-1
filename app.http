@@ -1,7 +1,10 @@
+GET http://localhost:3000/todos/
+
+###
 GET http://localhost:3000/todos/?status=TO%20DO
 ###
 
-GET http://localhost:3000/todos/?priority=LOW
+GET http://localhost:3000/todos/?priority=HIGH
 
 ###
 
@@ -12,7 +15,7 @@ GET http://localhost:3000/todos/?category=LEARNING&priority=HIGH
 ###
 
 
-GET http://localhost:3000/todos/?search_q=Buy
+GET http://localhost:3000/todos/?search_q=the
 ###
 
 GET http://localhost:3000/todos/?category=WORK&status=DONE
@@ -20,6 +23,10 @@ GET http://localhost:3000/todos/?category=WORK&status=DONE
 
 GET http://localhost:3000/todos/?category=HOME
 ###
+
+
+
+# API 2
 
 GET http://localhost:3000/todos/10/
 ###
@@ -31,7 +38,7 @@ POST http://localhost:3000/todos/
 Content-Type: application/json
 
 {
-  "id": 10,
+  "id": 2,
   "todo": "Finalize event theme",
   "priority": "LOW",
   "status": "TO DO",
@@ -77,5 +84,5 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/agenda/?date=2021-02-20
+GET http://localhost:3000/agenda/?date=
 ###
